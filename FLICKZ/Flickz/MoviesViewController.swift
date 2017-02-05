@@ -114,15 +114,18 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let title = singleMovie["title"] as! String
         let overview = singleMovie["overview"] as! String
-        let posterPath = singleMovie["poster_path"] as! String
         
+        if let posterPath = singleMovie["poster_path"] as? String
+        {
         let baseURL = "https://image.tmdb.org/t/p/w500"
         let imageURL = NSURL(string: baseURL + posterPath)
+        cell.posterView.setImageWith(imageURL as! URL)
+        }
         
         //CELL COMPONENTS
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
-        cell.posterView.setImageWith(imageURL as! URL)
+        
         
         
         print(title)
@@ -130,7 +133,24 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     }
     
+    //||||||||||||||||||||||||||||||||||||||||||
+    //|||||||||||PREPARE FOR SEGUE||||||||||||||
+    //||||||||||||||||||||||||||||||||||||||||||
 
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        //Sends the correct element in the dictionary to the next View
+        let cell2 = sender as! UITableViewCell
+        let indexPath =  tableView.indexPath(for: cell2)
+        
+        let singleMovie = movies![indexPath!.row] //singleMovie Comes is orginal
+        
+        let detailsViewController = segue.destination as! DetailsViewController
+        
+        detailsViewController.moviesDict = singleMovie //moviesDict is originally from detailsViewController
+        
+    }
 
     
     
