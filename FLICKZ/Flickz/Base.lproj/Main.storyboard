@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="7Bw-OI-qPY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="Mgk-bC-2Zn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,21 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
-        <scene sceneID="DRa-QT-krg">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iUi-bg-mwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="iZ7-JW-kKG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c1s-18-oQM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PCb-qw-Jqe"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="807" y="-765"/>
-        </scene>
         <!--Flicks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -85,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393.5" y="91.5"/>
+            <point key="canvasLocation" x="1980.5" y="91.5"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="o1B-Dx-4cY">
@@ -140,46 +125,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cid-vE-dZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060.5" y="87.5"/>
+            <point key="canvasLocation" x="2647.5" y="87.5"/>
         </scene>
-        <!--Flickz-->
-        <scene sceneID="Wz6-o0-0fj">
+        <!--Navigation Controller-->
+        <scene sceneID="AEh-xH-78m">
             <objects>
-                <navigationController title="Flickz" automaticallyAdjustsScrollViewInsets="NO" id="pRm-bk-W4x" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2gb-wp-fgO"/>
+                <navigationController storyboardIdentifier="MoviesNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Mgk-bC-2Zn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GQC-9l-FKi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5c0-xe-w1v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.45799247382198949" green="0.0" blue="0.14812980920903634" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="efN-pH-tzt"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7bs-Dm-NjX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="miy-xU-tz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rI-75-Yqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806.5" y="91.5"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="YTx-f1-hBl">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NFC-4B-akg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7Bw-OI-qPY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="4h9-Hq-L32">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="pRm-bk-W4x" kind="relationship" relationship="viewControllers" id="1B2-nA-Uwq"/>
-                        <segue destination="iZ7-JW-kKG" kind="relationship" relationship="viewControllers" id="P1d-4S-UO6"/>
-                    </connections>
-                </tabBarController>
-            </objects>
-            <point key="canvasLocation" x="219.5" y="91.5"/>
+            <point key="canvasLocation" x="1393.5" y="91.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

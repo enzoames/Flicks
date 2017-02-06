@@ -23,18 +23,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     let totalColors: Int = 100
     
+    var endPoint: String = ""
+    
     //||||||||||||||||||||||||||||||||||||
     //|||||||||||COLLECTION VIEW||||||||||
     //||||||||||||||||||||||||||||||||||||
     
-    func colorForIndexPath(indexPath: NSIndexPath) -> UIColor {
-        if indexPath.row >= totalColors {
-            return UIColor.black	// return black if we get an unexpected row index
-        }
-        
-        var hueValue: CGFloat = CGFloat(indexPath.row) / CGFloat(totalColors)
-        return UIColor(hue: hueValue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
-    }
+//    func colorForIndexPath(indexPath: NSIndexPath) -> UIColor {
+//        if indexPath.row >= totalColors {
+//            return UIColor.black	// return black if we get an unexpected row index
+//        }
+//        
+//        var hueValue: CGFloat = CGFloat(indexPath.row) / CGFloat(totalColors)
+//        return UIColor(hue: hueValue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+//    }
     
     
     //||||||||||||||||||||||||||||||||||||||||||
@@ -56,7 +58,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         //Network Request: endpoint- now playing from Movies API
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/\(endPoint)?api_key=\(apiKey)")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
        
@@ -69,7 +71,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 if let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
                     print(dataDictionary)
                     
-                    self.movies = dataDictionary["results"] as! [NSDictionary]
+                    self.movies = dataDictionary["results"] as? [NSDictionary]
                     
                     self.tableView.reloadData()
                 }
@@ -132,6 +134,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     
     }
+    
+        //avoid cell from staying selected
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     
     //||||||||||||||||||||||||||||||||||||||||||
     //|||||||||||PREPARE FOR SEGUE||||||||||||||

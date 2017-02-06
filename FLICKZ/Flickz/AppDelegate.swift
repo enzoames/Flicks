@@ -16,6 +16,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //Dont need to create a new view controller. Programmatically create each tab bar controller. The Tab bar controller is the first thing in the app. App Delagate. is the first thing that happens when the app begins
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        //NOW_PLAYING///
+        
+        //We basically built a now_playing Navigation controller by referencing the blue-print in the storyBoard, for the NavigationController, moviesNavigationController
+        
+        let nowPlayingNavigationController = storyBoard.instantiateViewController(withIdentifier: "MoviesNavigationController") as! UINavigationController
+        
+        let nowPLayingViewController = nowPlayingNavigationController.topViewController as! MoviesViewController
+        nowPLayingViewController.endPoint = "now_playing"
+        nowPlayingNavigationController.tabBarItem.title = "Now Playing"
+        nowPlayingNavigationController.tabBarItem.image = UIImage(named: "now_playing")
+        
+        
+        //TOP_RATED
+        
+        let topRatedNavigationController = storyBoard.instantiateViewController(withIdentifier: "MoviesNavigationController") as! UINavigationController
+        
+        let topRatedViewController = topRatedNavigationController.topViewController as! MoviesViewController
+        topRatedViewController.endPoint = "top_rated"
+        topRatedNavigationController.tabBarItem.title = "Top Rated"
+        topRatedNavigationController.tabBarItem.image = UIImage(named: "top_rated")
+        
+        
+        
+        
+        //CREATING A TAP BAR CONTROLLER
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController]
+        
+        tabBarController.tabBar.barTintColor = UIColor.init(red: 142.0/255.0, green: 35.0/255.0, blue: 35.0/255.0, alpha: 200.0)
+        tabBarController.tabBar.selectedItem?.badgeColor = UIColor.darkGray
+        
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
+        
+        
         return true
     }
 
