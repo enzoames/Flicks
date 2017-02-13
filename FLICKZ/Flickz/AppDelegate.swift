@@ -44,15 +44,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         topRatedNavigationController.tabBarItem.image = UIImage(named: "top_rated")
         
         
-        
-        
         //CREATING A TAP BAR CONTROLLER
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController]
         
-        tabBarController.tabBar.barTintColor = UIColor.init(red: 142.0/255.0, green: 35.0/255.0, blue: 35.0/255.0, alpha: 200.0)
+        //tabBarController.tabBar.barTintColor = UIColor.init(red: 142.0/255.0, green: 35.0/255.0, blue: 35.0/255.0, alpha: 200.0)
+        tabBarController.tabBar.barTintColor = UIColor.white
         tabBarController.tabBar.selectedItem?.badgeColor = UIColor.darkGray
+        //tabBarController.tabBar.backgroundImage = (UIImage(named: "background_app"))
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
