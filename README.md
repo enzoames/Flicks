@@ -41,9 +41,6 @@ Here's a walkthrough of the app
 
 ![Alt text](https://github.com/enzoames/Flickz/blob/master/FLICKZ/FlickzG.gif)
 
-
-
-
 ## Notes
 
 Describe any challenges encountered while building the app.
@@ -64,6 +61,11 @@ Describe any challenges encountered while building the app.
     See the License for the specific language governing permissions and
     limitations under the License.
 
+
+[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 
 
 
@@ -89,20 +91,23 @@ Describe any challenges encountered while building the app.
     The following **additional** features are implemented:
 
     - [x] Switch between TableView and CollectionView
+    - [X] Push for segue method for both TableView and CollectionView
     - [x] Included splash screen
     - [x] Included app icon
 
 
     Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-    1. More about push for segue method
-    2.
+    1. More about the push for segue method
+    2. How to properly implement the "network connection failure" when no connection is stablished
 
     ## Video Walkthrough
-
     Here's a walkthrough of the app
 
-    GIF created with [LiceCap](http://www.cockos.com/licecap/).
+    [FLICKZ](https://github.com/enzoames/Flickz/blob/master/FLICKZ/flickzGIF2/FLICKZ2.gif)
+
+    ![Alt text](https://github.com/enzoames/Flickz/blob/master/FLICKZ/flickzGIF2/FLICKZ2.gif)
+
 
     ## Notes
 
