@@ -1,3 +1,69 @@
+# Project 2 - *FLICKZ*
+
+**FLICKZ** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+
+Time spent: **10** hours spent in total
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] User can view movie details by tapping on a cell.
+- [x] User can select from a tab bar for either **Now Playing** or **Top Rated** movies.
+- [x] Customize the selection effect of the cell.
+
+The following **optional** features are implemented:
+
+- [x] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
+- [x] Customize the navigation bar.
+
+The following **additional** features are implemented:
+
+- [x] Switch between TableView and CollectionView
+- [X] Push for segue method for both TableView and CollectionView
+- [x] Included splash screen
+- [x] Included app icon
+
+
+Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
+
+1. More about the push for segue method
+2. How to properly implement the "network connection failure" when no connection is stablished
+
+## Video Walkthrough
+Here's a walkthrough of the app
+
+[FLICKZ](https://github.com/enzoames/Flickz/blob/master/FLICKZ/flickzGIF2/FLICKZ2.gif)
+
+![Alt text](https://github.com/enzoames/Flickz/blob/master/FLICKZ/flickzGIF2/FLICKZ2.gif)
+
+
+
+## License
+
+    Copyright [2017] [Enzo Ames]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+
+
+
+
+
+
+
+
+
 # Project 1 - *FLICKZ*
 
 FLICKS is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
@@ -37,13 +103,10 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of the app
 
-[FLICKZ](https://github.com/enzoames/Flickz/blob/master/FLICKZ/FlickzG.gif)
+[FLICKZ](https://github.com/enzoames/Flickz/blob/master/FLICKZ/flickzGIF1/FlickzG.gif)
 
-![Alt text](https://github.com/enzoames/Flickz/blob/master/FLICKZ/FlickzG.gif)
+![Alt text](https://github.com/enzoames/Flickz/blob/master/FLICKZ/flickzGIF1/FlickzG.gif)
 
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
@@ -60,71 +123,3 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
-
-[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
-[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
-[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
-[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
-
-
-
-    # Project 2 - *FLICKZ*
-
-    **FLICKZ** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
-
-    Time spent: **10** hours spent in total
-
-    ## User Stories
-
-    The following **required** functionality is completed:
-
-    - [x] User can view movie details by tapping on a cell.
-    - [x] User can select from a tab bar for either **Now Playing** or **Top Rated** movies.
-    - [x] Customize the selection effect of the cell.
-
-    The following **optional** features are implemented:
-
-    - [x] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
-    - [x] Customize the navigation bar.
-
-    The following **additional** features are implemented:
-
-    - [x] Switch between TableView and CollectionView
-    - [X] Push for segue method for both TableView and CollectionView
-    - [x] Included splash screen
-    - [x] Included app icon
-
-
-    Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-    1. More about the push for segue method
-    2. How to properly implement the "network connection failure" when no connection is stablished
-
-    ## Video Walkthrough
-    Here's a walkthrough of the app
-
-    [FLICKZ](https://github.com/enzoames/Flickz/blob/master/FLICKZ/flickzGIF2/FLICKZ2.gif)
-
-    ![Alt text](https://github.com/enzoames/Flickz/blob/master/FLICKZ/flickzGIF2/FLICKZ2.gif)
-
-
-    ## Notes
-
-    Describe any challenges encountered while building the app.
-
-    ## License
-
-        Copyright [2017] [Enzo Ames]
-
-        Licensed under the Apache License, Version 2.0 (the "License");
-        you may not use this file except in compliance with the License.
-        You may obtain a copy of the License at
-
-            http://www.apache.org/licenses/LICENSE-2.0
-
-        Unless required by applicable law or agreed to in writing, software
-        distributed under the License is distributed on an "AS IS" BASIS,
-        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-        See the License for the specific language governing permissions and
-        limitations under the License.
